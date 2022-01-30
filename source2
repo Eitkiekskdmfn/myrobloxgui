@@ -15,8 +15,8 @@ local BreakInScript = Instance.new("TextButton")
 local FNFscript = Instance.new("TextButton")
 local SpiderScript = Instance.new("TextButton")
 local WeirdSpiderScript = Instance.new("TextButton")
-local TextButton = Instance.new("TextButton")
-local TextButton_2 = Instance.new("TextButton")
+local Ageofherosscript = Instance.new("TextButton")
+local Darkhubscript = Instance.new("TextButton")
 
 --Properties:
 
@@ -41,6 +41,7 @@ OpenFrame.Active = true
 OpenFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 OpenFrame.Position = UDim2.new(0.203065127, 0, 0.159090891, 0)
 OpenFrame.Size = UDim2.new(0, 579, 0, 286)
+OpenFrame.Visible = false
 
 title.Name = "title"
 title.Parent = OpenFrame
@@ -226,7 +227,7 @@ end)
 
 -- Scripts:
 
-local function ZTKVQQW_fake_script() -- open.LocalScript 
+local function XDEZI_fake_script() -- open.LocalScript 
 	local script = Instance.new('LocalScript', open)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -238,4 +239,4 @@ local function ZTKVQQW_fake_script() -- open.LocalScript
 	end)
 	
 end
-coroutine.wrap(ZTKVQQW_fake_script)()
+coroutine.wrap(XDEZI_fake_script)()
