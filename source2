@@ -1,211 +1,230 @@
-local main = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
-local InfiniteYield = Instance.new("TextButton")
+
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local close = Instance.new("TextButton")
 local title = Instance.new("TextLabel")
+local InfiniteYield = Instance.new("TextButton")
 local CMDX = Instance.new("TextButton")
-local FatesAdmin = Instance.new("TextButton")
-local admingui = Instance.new("TextLabel")
-local LuaScriptsGUI = Instance.new("TextLabel")
-local FEscriptsGUI = Instance.new("TextLabel")
-local WeirdSpiderScript = Instance.new("TextButton")
-local SpiderScript = Instance.new("TextButton")
-local mm2script = Instance.new("TextButton")
-local Prisonlifeadmin = Instance.new("TextButton")
-local Ageofherosscript = Instance.new("TextButton")
-local BreakInScript = Instance.new("TextButton")
-local Darkhubscript = Instance.new("TextButton")
-local FNFscript = Instance.new("TextButton")
+local fatesgui = Instance.new("TextButton")
+local Prisonlife = Instance.new("TextButton")
+local BreakIn = Instance.new("TextButton")
+local FNF = Instance.new("TextButton")
+local Darkhub = Instance.new("TextButton")
+local MM2 = Instance.new("TextButton")
+local AOH = Instance.new("TextButton")
+local Spider = Instance.new("TextButton")
+local Bloxfruit = Instance.new("TextButton")
+local toh = Instance.new("TextButton")
 
 --Properties:
 
-main.Name = "main"
-main.Parent = game.CoreGui
+ScreenGui.Parent = game.CoreGui
 
-Frame.Parent = main
-Frame.BackgroundColor3 = Color3.fromRGB(82, 82, 82)
-Frame.Position = UDim2.new(0.203065127, 0, 0.159090906, 0)
-Frame.Size = UDim2.new(0, 579, 0, 286)
-Frame.Active = true
-Frame.Draggable = true
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.fromRGB(124, 255, 248)
+main.Position = UDim2.new(0.333333313, 0, 0.148601383, 0)
+main.Size = UDim2.new(0, 440, 0, 296)
+main.Active = true
+main.Draggable = true
+
+close.Name = "close"
+close.Parent = main
+close.BackgroundColor3 = Color3.fromRGB(246, 65, 10)
+close.BorderSizePixel = 3
+close.Position = UDim2.new(0.87954551, 0, 0, 0)
+close.Size = UDim2.new(0, 53, 0, 50)
+close.Font = Enum.Font.SourceSans
+close.Text = "X"
+close.TextColor3 = Color3.fromRGB(0, 0, 0)
+close.TextSize = 30.000
+
+title.Name = "title"
+title.Parent = main
+title.BackgroundColor3 = Color3.fromRGB(222, 222, 222)
+title.Size = UDim2.new(0, 384, 0, 50)
+title.Font = Enum.Font.SourceSans
+title.Text = "Danknoobs GUI v2.0 | Made By RedDeath6677"
+title.TextColor3 = Color3.fromRGB(0, 0, 0)
+title.TextSize = 20.000
 
 InfiniteYield.Name = "InfiniteYield"
-InfiniteYield.Parent = Frame
-InfiniteYield.BackgroundColor3 = Color3.fromRGB(61, 255, 70)
-InfiniteYield.Position = UDim2.new(0.0120898103, 0, 0.340909094, 0)
-InfiniteYield.Size = UDim2.new(0, 174, 0, 20)
+InfiniteYield.Parent = main
+InfiniteYield.BackgroundColor3 = Color3.fromRGB(225, 255, 181)
+InfiniteYield.BorderSizePixel = 2
+InfiniteYield.Position = UDim2.new(0.0136363637, 0, 0.192567572, 0)
+InfiniteYield.Size = UDim2.new(0, 200, 0, 20)
 InfiniteYield.Font = Enum.Font.SourceSans
-InfiniteYield.Text = "Infinite Yield"
+InfiniteYield.Text = "Infinite Yield (Admin GUI)"
 InfiniteYield.TextColor3 = Color3.fromRGB(0, 0, 0)
-InfiniteYield.TextSize = 20.000
+InfiniteYield.TextSize = 14.000
 InfiniteYield.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet((‘https://raw.githubusercontent.com/Eitkiekskdmfn/InfiniteYieldScript2.0/master/source’),true))()
 end)
 
-title.Name = "title"
-title.Parent = Frame
-title.BackgroundColor3 = Color3.fromRGB(72, 255, 238)
-title.Size = UDim2.new(0, 579, 0, 50)
-title.Font = Enum.Font.SourceSans
-title.Text = "Danknoobs GUI v2.0 | Made By RedDeath6677"
-title.TextColor3 = Color3.fromRGB(0, 0, 0)
-title.TextSize = 30.000
-
 CMDX.Name = "CMD-X"
-CMDX.Parent = Frame
-CMDX.BackgroundColor3 = Color3.fromRGB(59, 255, 55)
-CMDX.Position = UDim2.new(0.0120898103, 0, 0.463286728, 0)
-CMDX.Size = UDim2.new(0, 174, 0, 21)
+CMDX.Parent = main
+CMDX.BackgroundColor3 = Color3.fromRGB(225, 255, 181)
+CMDX.BorderSizePixel = 2
+CMDX.Position = UDim2.new(0.0136363637, 0, 0.290540546, 0)
+CMDX.Size = UDim2.new(0, 200, 0, 20)
 CMDX.Font = Enum.Font.SourceSans
-CMDX.Text = "CMD-X"
+CMDX.Text = "CMD-X (Admin GUI)"
 CMDX.TextColor3 = Color3.fromRGB(0, 0, 0)
-CMDX.TextSize = 20.000
+CMDX.TextSize = 14.000
 CMDX.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/Eitkiekskdmfn/CMD-XSCRIPT/master/Source'),true))()
 end)
 
-FatesAdmin.Name = "FatesAdmin"
-FatesAdmin.Parent = Frame
-FatesAdmin.BackgroundColor3 = Color3.fromRGB(59, 255, 55)
-FatesAdmin.Position = UDim2.new(0.0120898103, 0, 0.591783226, 0)
-FatesAdmin.Size = UDim2.new(0, 174, 0, 17)
-FatesAdmin.Font = Enum.Font.SourceSans
-FatesAdmin.Text = "Fates Admin"
-FatesAdmin.TextColor3 = Color3.fromRGB(0, 0, 0)
-FatesAdmin.TextSize = 20.000
-FatesAdmin.MouseButton1Down:connect(function()
+fatesgui.Name = "fatesgui"
+fatesgui.Parent = main
+fatesgui.BackgroundColor3 = Color3.fromRGB(225, 255, 181)
+fatesgui.BorderSizePixel = 2
+fatesgui.Position = UDim2.new(0.0136363637, 0, 0.388513505, 0)
+fatesgui.Size = UDim2.new(0, 200, 0, 20)
+fatesgui.Font = Enum.Font.SourceSans
+fatesgui.Text = "Fates GUI (Admin GUI)"
+fatesgui.TextColor3 = Color3.fromRGB(0, 0, 0)
+fatesgui.TextSize = 14.000
+fatesgui.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))();
 end)
 
-admingui.Name = "admin gui"
-admingui.Parent = Frame
-admingui.BackgroundColor3 = Color3.fromRGB(172, 172, 172)
-admingui.Position = UDim2.new(0, 0, 0.174825177, 0)
-admingui.Size = UDim2.new(0, 189, 0, 38)
-admingui.Font = Enum.Font.SourceSans
-admingui.Text = "Admin GUI"
-admingui.TextColor3 = Color3.fromRGB(0, 0, 0)
-admingui.TextSize = 20.000
-
-LuaScriptsGUI.Name = "Lua Scripts/GUI"
-LuaScriptsGUI.Parent = Frame
-LuaScriptsGUI.BackgroundColor3 = Color3.fromRGB(172, 172, 172)
-LuaScriptsGUI.Position = UDim2.new(0.341968924, 0, 0.176573426, 0)
-LuaScriptsGUI.Size = UDim2.new(0, 200, 0, 37)
-LuaScriptsGUI.Font = Enum.Font.SourceSans
-LuaScriptsGUI.Text = "Lua Scripts/GUI"
-LuaScriptsGUI.TextColor3 = Color3.fromRGB(0, 0, 0)
-LuaScriptsGUI.TextSize = 20.000
-
-FEscriptsGUI.Name = "FE scripts/GUI"
-FEscriptsGUI.Parent = Frame
-FEscriptsGUI.BackgroundColor3 = Color3.fromRGB(172, 172, 172)
-FEscriptsGUI.Position = UDim2.new(0.703015566, 0, 0.174825177, 0)
-FEscriptsGUI.Size = UDim2.new(0, 171, 0, 38)
-FEscriptsGUI.Font = Enum.Font.SourceSans
-FEscriptsGUI.Text = "FE scripts/GUI"
-FEscriptsGUI.TextColor3 = Color3.fromRGB(0, 0, 0)
-FEscriptsGUI.TextSize = 20.000
-
-WeirdSpiderScript.Name = "WeirdSpiderScript"
-WeirdSpiderScript.Parent = Frame
-WeirdSpiderScript.BackgroundColor3 = Color3.fromRGB(255, 236, 91)
-WeirdSpiderScript.Position = UDim2.new(0.720286727, 0, 0.340909094, 0)
-WeirdSpiderScript.Size = UDim2.new(0, 150, 0, 20)
-WeirdSpiderScript.Font = Enum.Font.SourceSans
-WeirdSpiderScript.Text = "Weird Spider Script"
-WeirdSpiderScript.TextColor3 = Color3.fromRGB(0, 0, 0)
-WeirdSpiderScript.TextSize = 20.000
-WeirdSpiderScript.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet(('https://raw.githubusercontent.com/Eitkiekskdmfn/robloxweirdspiderscript/main/source'),true))()
-end)
-
-SpiderScript.Name = "SpiderScript"
-SpiderScript.Parent = Frame
-SpiderScript.BackgroundColor3 = Color3.fromRGB(255, 236, 91)
-SpiderScript.Position = UDim2.new(0.720286727, 0, 0.4597902, 0)
-SpiderScript.Size = UDim2.new(0, 150, 0, 22)
-SpiderScript.Font = Enum.Font.SourceSans
-SpiderScript.Text = "Spider Script"
-SpiderScript.TextColor3 = Color3.fromRGB(0, 0, 0)
-SpiderScript.TextSize = 20.000
-SpiderScript.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet(('https://raw.githubusercontent.com/Eitkiekskdmfn/robloxspiderscript/main/script'),true))()
-end)
-
-mm2script.Name = "mm2script"
-mm2script.Parent = Frame
-mm2script.BackgroundColor3 = Color3.fromRGB(69, 199, 248)
-mm2script.Position = UDim2.new(0.360967189, 0, 0.340909094, 0)
-mm2script.Size = UDim2.new(0, 180, 0, 20)
-mm2script.Font = Enum.Font.SourceSans
-mm2script.Text = "MM2 Script GUI"
-mm2script.TextColor3 = Color3.fromRGB(0, 0, 0)
-mm2script.TextSize = 20.000
-mm2script.MouseButton1Down:connect(function()
-	local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https://api.eclipsehub.xyz/auth"c(a and b,"Executor not Supported")a(b({Url=e.."\?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()
-end)
-
-Prisonlifeadmin.Name = "Prisonlifeadmin"
-Prisonlifeadmin.Parent = Frame
-Prisonlifeadmin.BackgroundColor3 = Color3.fromRGB(69, 199, 248)
-Prisonlifeadmin.Position = UDim2.new(0.360967189, 0, 0.4597902, 0)
-Prisonlifeadmin.Size = UDim2.new(0, 180, 0, 22)
-Prisonlifeadmin.Font = Enum.Font.SourceSans
-Prisonlifeadmin.Text = "Prison life Admin Script"
-Prisonlifeadmin.TextColor3 = Color3.fromRGB(0, 0, 0)
-Prisonlifeadmin.TextSize = 20.000
-Prisonlifeadmin.MouseButton1Down:connect(function()
+Prisonlife.Name = "Prisonlife"
+Prisonlife.Parent = main
+Prisonlife.BackgroundColor3 = Color3.fromRGB(225, 255, 181)
+Prisonlife.BorderSizePixel = 2
+Prisonlife.Position = UDim2.new(0.515909076, 0, 0.192567572, 0)
+Prisonlife.Size = UDim2.new(0, 200, 0, 20)
+Prisonlife.Font = Enum.Font.SourceSans
+Prisonlife.Text = "Prison Life (Admin GUI)"
+Prisonlife.TextColor3 = Color3.fromRGB(0, 0, 0)
+Prisonlife.TextSize = 14.000
+Prisonlife.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/Eitkiekskdmfn/robloxprisonlifeadminscript/main/source'),true))()
 end)
 
-Ageofherosscript.Name = "Ageofherosscript"
-Ageofherosscript.Parent = Frame
-Ageofherosscript.BackgroundColor3 = Color3.fromRGB(69, 199, 248)
-Ageofherosscript.Position = UDim2.new(0.360967189, 0, 0.58916086, 0)
-Ageofherosscript.Size = UDim2.new(0, 180, 0, 17)
-Ageofherosscript.Font = Enum.Font.SourceSans
-Ageofherosscript.Text = "Age Of Heros GUI"
-Ageofherosscript.TextColor3 = Color3.fromRGB(0, 0, 0)
-Ageofherosscript.TextSize = 20.000
-Ageofherosscript.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/laderite/zenx/main/script.lua'))()
-end)
-
-BreakInScript.Name = "BreakInScript"
-BreakInScript.Parent = Frame
-BreakInScript.BackgroundColor3 = Color3.fromRGB(82, 209, 249)
-BreakInScript.Position = UDim2.new(0.360967189, 0, 0.686188817, 0)
-BreakInScript.Size = UDim2.new(0, 180, 0, 18)
-BreakInScript.Font = Enum.Font.SourceSans
-BreakInScript.Text = "Break In Script GUI"
-BreakInScript.TextColor3 = Color3.fromRGB(0, 0, 0)
-BreakInScript.TextSize = 20.000
-BreakInScript.MouseButton1Down:connect(function()
+BreakIn.Name = "BreakIn"
+BreakIn.Parent = main
+BreakIn.BackgroundColor3 = Color3.fromRGB(225, 255, 181)
+BreakIn.BorderSizePixel = 2
+BreakIn.Position = UDim2.new(0.515909076, 0, 0.290540546, 0)
+BreakIn.Size = UDim2.new(0, 200, 0, 20)
+BreakIn.Font = Enum.Font.SourceSans
+BreakIn.Text = "Break In (Lua GUI)"
+BreakIn.TextColor3 = Color3.fromRGB(0, 0, 0)
+BreakIn.TextSize = 14.000
+BreakIn.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/Jaaaaay2/MahScriptHub/master/Break%20In%20Rewrite.lua"))()
 end)
 
-Darkhubscript.Name = "Darkhubscript"
-Darkhubscript.Parent = Frame
-Darkhubscript.BackgroundColor3 = Color3.fromRGB(59, 186, 246)
-Darkhubscript.Position = UDim2.new(0.360967189, 0, 0.789335668, 0)
-Darkhubscript.Size = UDim2.new(0, 180, 0, 17)
-Darkhubscript.Font = Enum.Font.SourceSans
-Darkhubscript.Text = "DarkHub GUI"
-Darkhubscript.TextColor3 = Color3.fromRGB(0, 0, 0)
-Darkhubscript.TextSize = 20.000
-Darkhubscript.MouseButton1Down:connect(function()
+FNF.Name = "FNF"
+FNF.Parent = main
+FNF.BackgroundColor3 = Color3.fromRGB(225, 255, 181)
+FNF.BorderSizePixel = 2
+FNF.Position = UDim2.new(0.515909076, 0, 0.388513505, 0)
+FNF.Size = UDim2.new(0, 200, 0, 20)
+FNF.Font = Enum.Font.SourceSans
+FNF.Text = "Friday Night Funkin (Lua GUI)"
+FNF.TextColor3 = Color3.fromRGB(0, 0, 0)
+FNF.TextSize = 14.000
+FNF.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx/funky-friday-autoplay/main/main.lua",true))()
+end)
+
+Darkhub.Name = "Darkhub"
+Darkhub.Parent = main
+Darkhub.BackgroundColor3 = Color3.fromRGB(225, 255, 181)
+Darkhub.BorderSizePixel = 2
+Darkhub.Position = UDim2.new(0.515909076, 0, 0.489864886, 0)
+Darkhub.Size = UDim2.new(0, 200, 0, 20)
+Darkhub.Font = Enum.Font.SourceSans
+Darkhub.Text = "Darkhub (Lua GUI)"
+Darkhub.TextColor3 = Color3.fromRGB(0, 0, 0)
+Darkhub.TextSize = 14.000
+Darkhub.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init", true))()
 end)
 
-FNFscript.Name = "FNFscript"
-FNFscript.Parent = Frame
-FNFscript.BackgroundColor3 = Color3.fromRGB(82, 209, 249)
-FNFscript.Position = UDim2.new(0.360967189, 0, 0.886363626, 0)
-FNFscript.Size = UDim2.new(0, 180, 0, 19)
-FNFscript.Font = Enum.Font.SourceSans
-FNFscript.Text = "FridayNightFunkinScript GUI"
-FNFscript.TextColor3 = Color3.fromRGB(0, 0, 0)
-FNFscript.TextSize = 19.000
-FNFscript.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx/funky-friday-autoplay/main/main.lua",true))()
+MM2.Name = "MM2"
+MM2.Parent = main
+MM2.BackgroundColor3 = Color3.fromRGB(225, 255, 181)
+MM2.BorderSizePixel = 2
+MM2.Position = UDim2.new(0.515909076, 0, 0.591216207, 0)
+MM2.Size = UDim2.new(0, 200, 0, 20)
+MM2.Font = Enum.Font.SourceSans
+MM2.Text = "MM2 (Lua GUI)"
+MM2.TextColor3 = Color3.fromRGB(0, 0, 0)
+MM2.TextSize = 14.000
+MM2.MouseButton1Down:connect(function()
+	local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https://api.eclipsehub.xyz/auth"c(a and b,"Executor not Supported")a(b({Url=e.."\?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()
 end)
+
+AOH.Name = "AOH"
+AOH.Parent = main
+AOH.BackgroundColor3 = Color3.fromRGB(225, 255, 181)
+AOH.BorderSizePixel = 2
+AOH.Position = UDim2.new(0.515909076, 0, 0.689189196, 0)
+AOH.Size = UDim2.new(0, 200, 0, 20)
+AOH.Font = Enum.Font.SourceSans
+AOH.Text = "Age Of Heros (Lua GUI)"
+AOH.TextColor3 = Color3.fromRGB(0, 0, 0)
+AOH.TextSize = 14.000
+AOH.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/laderite/zenx/main/script.lua'))()
+end)
+
+Spider.Name = "Spider"
+Spider.Parent = main
+Spider.BackgroundColor3 = Color3.fromRGB(225, 255, 181)
+Spider.BorderSizePixel = 2
+Spider.Position = UDim2.new(0.0136363637, 0, 0.591216207, 0)
+Spider.Size = UDim2.new(0, 139, 0, 20)
+Spider.Font = Enum.Font.SourceSans
+Spider.Text = "Spider (FE script)"
+Spider.TextColor3 = Color3.fromRGB(0, 0, 0)
+Spider.TextSize = 14.000
+Spider.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/Eitkiekskdmfn/robloxspiderscript/main/script'),true))()
+end)
+
+Bloxfruit.Name = "Bloxfruit"
+Bloxfruit.Parent = main
+Bloxfruit.BackgroundColor3 = Color3.fromRGB(225, 255, 181)
+Bloxfruit.BorderSizePixel = 2
+Bloxfruit.Position = UDim2.new(0.515909076, 0, 0.790540576, 0)
+Bloxfruit.Size = UDim2.new(0, 200, 0, 20)
+Bloxfruit.Font = Enum.Font.SourceSans
+Bloxfruit.Text = "Bloxfruit (Lua GUI)"
+Bloxfruit.TextColor3 = Color3.fromRGB(0, 0, 0)
+Bloxfruit.TextSize = 14.000
+Bloxfruit.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/xDepressionx/Free-Script/main/BloxFruit.lua"))()
+end)
+
+toh.Name = "toh"
+toh.Parent = main
+toh.BackgroundColor3 = Color3.fromRGB(225, 255, 181)
+toh.BorderSizePixel = 2
+toh.Position = UDim2.new(0.515909076, 0, 0.888513505, 0)
+toh.Size = UDim2.new(0, 200, 0, 20)
+toh.Font = Enum.Font.SourceSans
+toh.Text = "Tower of hell (Lua GUI)"
+toh.TextColor3 = Color3.fromRGB(0, 0, 0)
+toh.TextSize = 14.000
+toh.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/iiProductionz/Floater-Scripts/main/WaifuEdition/Tower%20Of%20Hell"))()
+end)
+
+-- Scripts:
+
+local function LINF_fake_script() -- close.LocalScript 
+	local script = Instance.new('LocalScript', close)
+
+	local Frame = script.Parent.Parent
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		Frame.Visible = false
+	end)
+end
+coroutine.wrap(LINF_fake_script)()
