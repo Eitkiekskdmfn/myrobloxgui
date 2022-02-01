@@ -47,7 +47,7 @@ infiniteyield.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/Eitkiekskdmfn/InfiniteYieldScript2.0/master/source'),true))()
 end)
 
-Spiderscript.Name = "Spiderscript"
+Spiderscript.Name = "Bloxfruit"
 Spiderscript.Parent = main
 Spiderscript.BackgroundColor3 = Color3.fromRGB(193, 193, 193)
 Spiderscript.Position = UDim2.new(0.565302134, 0, 0.331125826, 0)
@@ -57,7 +57,7 @@ Spiderscript.Text = "Spider Script"
 Spiderscript.TextColor3 = Color3.fromRGB(0, 0, 0)
 Spiderscript.TextSize = 25.000
 Spiderscript.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet(('https://raw.githubusercontent.com/Eitkiekskdmfn/robloxspiderscript/main/script'),true))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/xDepressionx/Free-Script/main/BloxFruit.lua"))()
 end)
 
 DarkHub.Name = "DarkHub"
