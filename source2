@@ -227,4 +227,3 @@ local function LINF_fake_script() -- close.LocalScript
 		Frame.Visible = false
 	end)
 end
-coroutine.wrap(LINF_fake_script)()
