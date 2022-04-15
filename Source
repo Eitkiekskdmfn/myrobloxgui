@@ -7,24 +7,26 @@ local MyGuis = Instance.new("ScrollingFrame")
 local UICorner_2 = Instance.new("UICorner")
 local SAKTKGunGuiScript = Instance.new("TextButton")
 local UICorner_3 = Instance.new("UICorner")
-local Tools = Instance.new("ScrollingFrame")
+local Daycare2Script = Instance.new("TextButton")
 local UICorner_4 = Instance.new("UICorner")
-local CFrameCoordsScript = Instance.new("TextButton")
+local Tools = Instance.new("ScrollingFrame")
 local UICorner_5 = Instance.new("UICorner")
-local RecentUpdates = Instance.new("ScrollingFrame")
+local CFrameCoordsScript = Instance.new("TextButton")
 local UICorner_6 = Instance.new("UICorner")
+local RecentUpdates = Instance.new("ScrollingFrame")
+local UICorner_7 = Instance.new("UICorner")
 local RecentUpdatesLabel = Instance.new("TextLabel")
 local MadeBy = Instance.new("TextLabel")
-local UICorner_7 = Instance.new("UICorner")
+local UICorner_8 = Instance.new("UICorner")
 local UIGradient = Instance.new("UIGradient")
 local MyGuisButton = Instance.new("TextButton")
-local UICorner_8 = Instance.new("UICorner")
-local ToolsButton = Instance.new("TextButton")
 local UICorner_9 = Instance.new("UICorner")
-local RecentUpdatesButton = Instance.new("TextButton")
+local ToolsButton = Instance.new("TextButton")
 local UICorner_10 = Instance.new("UICorner")
-local CloseMainFrameButton = Instance.new("TextButton")
+local RecentUpdatesButton = Instance.new("TextButton")
 local UICorner_11 = Instance.new("UICorner")
+local CloseMainFrameButton = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
 
 --Properties:
 
@@ -68,6 +70,21 @@ end)
 
 UICorner_3.Parent = SAKTKGunGuiScript
 
+Daycare2Script.Name = "Daycare2Script"
+Daycare2Script.Parent = MyGuis
+Daycare2Script.BackgroundColor3 = Color3.fromRGB(243, 219, 255)
+Daycare2Script.Position = UDim2.new(0.348837227, 0, 0.0284597185, 0)
+Daycare2Script.Size = UDim2.new(0, 162, 0, 36)
+Daycare2Script.Font = Enum.Font.PatrickHand
+Daycare2Script.Text = "Daycare 2 Story Gui"
+Daycare2Script.TextColor3 = Color3.fromRGB(0, 0, 0)
+Daycare2Script.TextSize = 25.000
+Daycare2Script.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(("https://raw.githubusercontent.com/Eitkiekskdmfn/RobloxDaycare2StoryGui/main/SourceGui"), true))()
+end)
+
+UICorner_4.Parent = Daycare2Script
+
 Tools.Name = "Tools"
 Tools.Parent = MainFrame
 Tools.Active = true
@@ -76,7 +93,7 @@ Tools.Position = UDim2.new(0, 0, 0.250793666, 0)
 Tools.Size = UDim2.new(0, 516, 0, 236)
 Tools.Visible = false
 
-UICorner_4.Parent = Tools
+UICorner_5.Parent = Tools
 
 CFrameCoordsScript.Name = "CFrameCoordsScript"
 CFrameCoordsScript.Parent = Tools
@@ -91,7 +108,7 @@ CFrameCoordsScript.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet(("https://raw.githubusercontent.com/Eitkiekskdmfn/RobloxCoordinateScript/main/Source"), true))()
 end)
 
-UICorner_5.Parent = CFrameCoordsScript
+UICorner_6.Parent = CFrameCoordsScript
 
 RecentUpdates.Name = "RecentUpdates"
 RecentUpdates.Parent = MainFrame
@@ -101,7 +118,7 @@ RecentUpdates.Position = UDim2.new(0, 0, 0.250793666, 0)
 RecentUpdates.Size = UDim2.new(0, 516, 0, 236)
 RecentUpdates.Visible = false
 
-UICorner_6.Parent = RecentUpdates
+UICorner_7.Parent = RecentUpdates
 
 RecentUpdatesLabel.Name = "RecentUpdatesLabel"
 RecentUpdatesLabel.Parent = RecentUpdates
@@ -110,7 +127,7 @@ RecentUpdatesLabel.BackgroundTransparency = 100.000
 RecentUpdatesLabel.Position = UDim2.new(0.0116279069, 0, 0.0105702076, 0)
 RecentUpdatesLabel.Size = UDim2.new(0, 463, 0, 221)
 RecentUpdatesLabel.Font = Enum.Font.SourceSans
-RecentUpdatesLabel.Text = "*Recently updated the SAKTK GunGui"
+RecentUpdatesLabel.Text = "*Recently added Daycare 2 story Gui"
 RecentUpdatesLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 RecentUpdatesLabel.TextSize = 35.000
 RecentUpdatesLabel.TextXAlignment = Enum.TextXAlignment.Left
@@ -126,7 +143,7 @@ MadeBy.Text = "Hub Gui | Made By RedDeath6677"
 MadeBy.TextColor3 = Color3.fromRGB(0, 0, 0)
 MadeBy.TextSize = 25.000
 
-UICorner_7.Parent = MadeBy
+UICorner_8.Parent = MadeBy
 
 UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.51, Color3.fromRGB(33, 0, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
 UIGradient.Parent = MadeBy
@@ -143,7 +160,7 @@ MyGuisButton.TextScaled = true
 MyGuisButton.TextSize = 30.000
 MyGuisButton.TextWrapped = true
 
-UICorner_8.Parent = MyGuisButton
+UICorner_9.Parent = MyGuisButton
 
 ToolsButton.Name = "ToolsButton"
 ToolsButton.Parent = MainFrame
@@ -157,7 +174,7 @@ ToolsButton.TextScaled = true
 ToolsButton.TextSize = 30.000
 ToolsButton.TextWrapped = true
 
-UICorner_9.Parent = ToolsButton
+UICorner_10.Parent = ToolsButton
 
 RecentUpdatesButton.Name = "RecentUpdatesButton"
 RecentUpdatesButton.Parent = MainFrame
@@ -171,7 +188,7 @@ RecentUpdatesButton.TextScaled = true
 RecentUpdatesButton.TextSize = 30.000
 RecentUpdatesButton.TextWrapped = true
 
-UICorner_10.Parent = RecentUpdatesButton
+UICorner_11.Parent = RecentUpdatesButton
 
 CloseMainFrameButton.Name = "CloseMainFrameButton"
 CloseMainFrameButton.Parent = MainFrame
@@ -183,11 +200,11 @@ CloseMainFrameButton.Text = "X"
 CloseMainFrameButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 CloseMainFrameButton.TextSize = 30.000
 
-UICorner_11.Parent = CloseMainFrameButton
+UICorner_12.Parent = CloseMainFrameButton
 
 -- Scripts:
 
-local function AMRZ_fake_script() -- MyGuisButton.LocalScript 
+local function HKTFVYL_fake_script() -- MyGuisButton.LocalScript 
 	local script = Instance.new('LocalScript', MyGuisButton)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -197,8 +214,8 @@ local function AMRZ_fake_script() -- MyGuisButton.LocalScript
 		wait(0.1)
 	end)
 end
-coroutine.wrap(AMRZ_fake_script)()
-local function EPQEAW_fake_script() -- ToolsButton.LocalScript 
+coroutine.wrap(HKTFVYL_fake_script)()
+local function PFEOIU_fake_script() -- ToolsButton.LocalScript 
 	local script = Instance.new('LocalScript', ToolsButton)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -208,8 +225,8 @@ local function EPQEAW_fake_script() -- ToolsButton.LocalScript
 		wait(0.1)
 	end)
 end
-coroutine.wrap(EPQEAW_fake_script)()
-local function ZXWM_fake_script() -- RecentUpdatesButton.LocalScript 
+coroutine.wrap(PFEOIU_fake_script)()
+local function FWFKG_fake_script() -- RecentUpdatesButton.LocalScript 
 	local script = Instance.new('LocalScript', RecentUpdatesButton)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -219,8 +236,8 @@ local function ZXWM_fake_script() -- RecentUpdatesButton.LocalScript
 		wait(0.1)
 	end)
 end
-coroutine.wrap(ZXWM_fake_script)()
-local function QMKV_fake_script() -- CloseMainFrameButton.LocalScript 
+coroutine.wrap(FWFKG_fake_script)()
+local function SVIURRN_fake_script() -- CloseMainFrameButton.LocalScript 
 	local script = Instance.new('LocalScript', CloseMainFrameButton)
 
 	local Frame = script.Parent.Parent
@@ -229,4 +246,4 @@ local function QMKV_fake_script() -- CloseMainFrameButton.LocalScript
 		Frame.Visible = false
 	end)
 end
-coroutine.wrap(QMKV_fake_script)()
+coroutine.wrap(SVIURRN_fake_script)()
