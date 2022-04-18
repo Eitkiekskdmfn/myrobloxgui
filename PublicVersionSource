@@ -1,0 +1,29 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("RedDeath6677 Gui Hub", "Ocean")
+
+local Tab = Window:NewTab("GuiArea")
+local GuiAreaSection = Tab:NewSection("GuiArea")
+GuiAreaSection:NewButton("SAKTK Gun Gui", "A GunGui that only works in the game SAKTK.", function()
+	loadstring(game:HttpGet(("https://raw.githubusercontent.com/Eitkiekskdmfn/RobloxScripts/main/RobloxSAKTKGunGUI"), true))()
+	print("Clicked")
+end)
+
+GuiAreaSection:NewButton("Daycare 2 Story Gui", "A Gui that only works in the game Daycare 2 Story.", function()
+	loadstring(game:HttpGet(("https://raw.githubusercontent.com/Eitkiekskdmfn/RobloxDaycare2StoryGui/main/SourceGui"), true))()
+	print("Clicked")
+end)
+
+local Tab = Window:NewTab("Player")
+local PlayerSection = Tab:NewSection("Player")
+PlayerSection:NewSlider("Walkspeed", "Changes your walkspeed.", 500, 0, function(s)
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+PlayerSection:NewSlider("JumpPower", "Changes how high you can jump.", 450, 50, function(s)
+	game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+end)
+
+PlayerSection:NewButton("E to Fly", "Press the E key to fly/unfly", function()
+	loadstring(game:HttpGet(("https://raw.githubusercontent.com/Eitkiekskdmfn/ScriptsForRoblox/main/FlyScript"), true))()
+	print("Clicked")
+end)
