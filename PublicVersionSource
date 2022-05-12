@@ -45,7 +45,7 @@ PlayerSection:NewSlider("JumpPower", "Changes how high you can jump.", 500, 50, 
 	game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
 end)
 
-PlayerSection:NewButton("E To Fly", "Enables you to fly in Roblox.", function()
+PlayerSection:NewButton("Q To Fly", "Enables you to fly in Roblox.", function()
 	repeat wait() 
 	until game.Players.LocalPlayer and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:findFirstChild("Head") and game.Players.LocalPlayer.Character:findFirstChild("Humanoid") 
 	local mouse = game.Players.LocalPlayer:GetMouse() 
@@ -98,7 +98,7 @@ PlayerSection:NewButton("E To Fly", "Enables you to fly in Roblox.", function()
 		plr.Character.Humanoid.PlatformStand = false 
 	end 
 	mouse.KeyDown:connect(function(key) 
-		if key:lower() == "e" then 
+		if key:lower() == "q" then 
 			if flying then flying = false 
 			else 
 				flying = true 
